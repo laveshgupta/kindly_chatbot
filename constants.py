@@ -18,5 +18,4 @@ class Constants:
         'nb': 'Norsk'
     }
     CHATBOT_KNOWLEDGE_FILE = 'kindly-bot.json'
-    INTEGRATION_TESTS_CASES_FILE = 'ratestask_integration_tests.json'
     
