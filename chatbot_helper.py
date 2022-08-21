@@ -109,7 +109,7 @@ class ChatBotHelper:
 
     @staticmethod
     def get_reply(question, language, prev_reply_id):
-        logger.debug(f"Searching for {question} in knowledge base")
+        logger.debug(f"Searching for '{question}' in knowledge base")
         string_to_search = question.lower()
         samples = knowledge_dict.get('samples')
 

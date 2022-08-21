@@ -15,7 +15,30 @@ This repo is created to solve interview assignment- Chatbot
 Created two APIs. One for the greeting and second one to generate response for the question
 
 * Greeting API: /api/conversation/start
+```
+REQUEST: POST http://localhost/api/conversation/start
+REQUEST BODY: {“language”: “en”}
+RESPONSE: {'user_id': '9003427b-2142-484c-81c1-db39111e6585', 'message': 'Hi there!'}
+```
+
+```
+REQUEST: POST http://localhost/api/conversation/start 
+REQUEST BODY: {"language": "nb"}
+RESPONSE: {'user_id': 'a5fec511-0477-45af-9308-dcb6d436fd76', 'message': 'Heisann!'}
+```
+
 * Message API: /api/conversation/message
+```
+REQUEST: POST http://localhost/api/conversation/message
+REQUEST BODY: {"message": "Do you know any robot jokes?"}
+RESPONSE: {'message': 'Why did the robot start school again? He had become quite rusty ...'}
+```
+
+```
+REQUEST: POST http://localhost/api/conversation/message
+REQUEST BODY: {"message": "Kan du noen robotvitser?"}
+RESPONSE: {'message': 'Vet du hvorfor roboter tar sommerferie? For å lade batteriene!'}
+```
 
  # Initial Setup
 
@@ -29,7 +52,7 @@ Created two APIs. One for the greeting and second one to generate response for t
 
  # Run Application
 
- Activate above created virtualenv, Then run ratestask_server.py file
+ Activate above created virtualenv, Then run chatbot_server.py file
 
  ```
  source <path>/bin/activate
